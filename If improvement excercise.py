@@ -7,13 +7,13 @@ month = int(input("Please enter a month as a number between 1-12: "))
 year = int(input("Please enter the year in its last two numbers: "))
 
 if day == 1 or day == 21 or day == 31:
-    day_st = "st"
+    day_after = "st"
 elif day == 2 or day == 22:
-    day_nd = "nd"
+    day_after = "nd"
 elif day == 3 or day == 23:
-    day_rd = "rd"
+    day_after = "rd"
 else:
-    day_th = "th"
+    day_after = "th"
 
 if month == 1:
     month = "January"
@@ -43,4 +43,5 @@ else:
     print("Invalid number")
 
 
-print("{0}{1} 
+
+print("{0}{1} {2} 20{3}".format(day,day_after,month,year))
